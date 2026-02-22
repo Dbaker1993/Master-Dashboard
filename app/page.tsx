@@ -8,6 +8,7 @@ import ToDoProjects from '@/components/ToDoProjects';
 import WeeklyAnalysis from '@/components/WeeklyAnalysis';
 import GoHighLevel from '@/components/GoHighLevel';
 import CFOFinance from '@/components/CFOFinance';
+import MasterAgents from '@/components/MasterAgents';
 import Placeholder from '@/components/Placeholder';
 
 export default function Dashboard() {
@@ -15,6 +16,7 @@ export default function Dashboard() {
   const [activeSection, setActiveSection] = useState('vision');
 
   const sections = [
+    { id: 'agents', label: 'Master Agents', icon: '⚙️' },
     { id: 'vision', label: 'Vision Board', icon: '🎯' },
     { id: 'projects', label: 'Current Projects', icon: '📊' },
     { id: 'todo', label: 'To-Do List', icon: '✅' },
@@ -26,6 +28,8 @@ export default function Dashboard() {
 
   const renderSection = () => {
     switch(activeSection) {
+      case 'agents':
+        return <MasterAgents />;
       case 'vision':
         return <VisionBoard />;
       case 'projects':
