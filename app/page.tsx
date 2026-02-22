@@ -6,6 +6,7 @@ import VisionBoard from '@/components/VisionBoard';
 import CurrentProjects from '@/components/CurrentProjects';
 import ToDoProjects from '@/components/ToDoProjects';
 import WeeklyAnalysis from '@/components/WeeklyAnalysis';
+import GoHighLevel from '@/components/GoHighLevel';
 import Placeholder from '@/components/Placeholder';
 
 export default function Dashboard() {
@@ -45,11 +46,7 @@ export default function Dashboard() {
           icon="📱"
         />;
       case 'ghl':
-        return <Placeholder 
-          title="GoHighLevel Integration" 
-          description="Live leads pipeline, traffic sources, customer journey tracking."
-          icon="🔗"
-        />;
+        return <GoHighLevel />;
       default:
         return <VisionBoard />;
     }
