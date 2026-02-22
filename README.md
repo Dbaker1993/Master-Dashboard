@@ -1,4 +1,4 @@
-# Master Dashboard - RapidQS
+# Master Dashboard - David Baker
 
 Executive dashboard for tracking projects, leads, and financial performance.
 
@@ -69,4 +69,4 @@ Components are ready for:
 
 ## License
 
-Proprietary - RapidQS 2026
+Proprietary - David Baker 2026

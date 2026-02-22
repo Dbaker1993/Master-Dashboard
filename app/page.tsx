@@ -65,7 +65,7 @@ export default function Dashboard() {
       >
         <div className="p-6">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-8">
-            RapidQS
+            David Baker
           </h1>
           <nav className="space-y-2">
             {sections.map((section) => (

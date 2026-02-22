@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Master Dashboard - RapidQS",
+  title: "Master Dashboard - David Baker",
   description: "Executive dashboard for tracking projects, leads, and finances",
 };
 
