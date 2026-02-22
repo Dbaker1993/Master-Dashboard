@@ -7,6 +7,7 @@ import CurrentProjects from '@/components/CurrentProjects';
 import ToDoProjects from '@/components/ToDoProjects';
 import WeeklyAnalysis from '@/components/WeeklyAnalysis';
 import GoHighLevel from '@/components/GoHighLevel';
+import CFOFinance from '@/components/CFOFinance';
 import Placeholder from '@/components/Placeholder';
 
 export default function Dashboard() {
@@ -34,11 +35,7 @@ export default function Dashboard() {
       case 'analysis':
         return <WeeklyAnalysis />;
       case 'finance':
-        return <Placeholder 
-          title="Master CFO Finance Tracker" 
-          description="Connect to Stripe, bank accounts, and expense tracking. Real-time P&L dashboard."
-          icon="💰"
-        />;
+        return <CFOFinance />;
       case 'marketing':
         return <Placeholder 
           title="Total Marketing Data" 
