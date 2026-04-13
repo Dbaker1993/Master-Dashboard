@@ -11,6 +11,7 @@ import CFOFinance from '@/components/CFOFinance';
 import MasterAgents from '@/components/MasterAgents';
 import TasksCompleted from '@/components/TasksCompleted';
 import Placeholder from '@/components/Placeholder';
+import UnitEconomics from '@/components/UnitEconomics';
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -20,9 +21,10 @@ export default function Dashboard() {
     { id: 'agents', label: 'Master Agents', icon: '⚙️' },
     { id: 'tasks', label: 'Tasks Completed', icon: '📋' },
     { id: 'vision', label: 'Vision Board', icon: '🎯' },
-    { id: 'projects', label: 'Current Projects', icon: '📊' },
+    { id: 'unit-economics', label: 'Unit Economics', icon: '📊' },
+    { id: 'projects', label: 'Current Projects', icon: '📈' },
     { id: 'todo', label: 'To-Do List', icon: '✅' },
-    { id: 'analysis', label: 'Weekly Analysis', icon: '📈' },
+    { id: 'analysis', label: 'Weekly Analysis', icon: '📊' },
     { id: 'finance', label: 'CFO Finance', icon: '💰' },
     { id: 'marketing', label: 'Marketing Data', icon: '📱' },
     { id: 'ghl', label: 'GoHighLevel', icon: '🔗' },
@@ -36,6 +38,8 @@ export default function Dashboard() {
         return <TasksCompleted />;
       case 'vision':
         return <VisionBoard />;
+      case 'unit-economics':
+        return <UnitEconomics />;
       case 'projects':
         return <CurrentProjects />;
       case 'todo':
